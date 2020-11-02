@@ -3,7 +3,8 @@
  */
 
 // get all the hot class elements- change them to cool class
-
+$('li.hot').removeClass('hot');
+$('li').addClass('cool');
 
 // traverse the elements
 
