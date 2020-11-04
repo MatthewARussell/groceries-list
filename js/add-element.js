@@ -7,7 +7,7 @@ $('li.hot').removeClass('hot');
 $('li').addClass('cool');
 
 // traverse the elements
-
+$("#one").next().next().text("milk");
 
 // add a new element
 
