@@ -22,6 +22,7 @@ function addElement() {
 
 
 //  click the li element will change the changeStyle
+$("li").click(changeStyle);
 function changeStyle() {
 if ($(this).hasClass("complete")) {
     $(this).removeClass("complete");
