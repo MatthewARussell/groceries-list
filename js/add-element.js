@@ -14,9 +14,19 @@ $("one").next().next().text("milk");
 
 // add by clicking the plus sign
 
-$('add').click(addElement);
+$('#add').click(addElement);
 function addElement() {
   // add a new element
+  $('#todo').append("<li> <input type='text'> </li>");
+  $('input').blur(function(){
+    console.log('reach');
+
+    $(this).parent().addClass('cool');
+
+    var userinput = $(this).val();
+    $(this).parent().text(userinput);
+    $("li").click(changeStyle);
+  });
   
 }
 
@@ -45,6 +55,6 @@ document.getElementById("remove").addEventListener("click", removeElement);
 
 function removeElement() {
   // remove the marked element
- 
+ $('li.complete').remove();
  
 }
