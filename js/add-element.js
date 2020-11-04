@@ -13,7 +13,7 @@ $("#one").next().next().text("milk");
 
 
 // add by clicking the plus sign
-document.getElementById("add").addEventListener("click", addElement);
+$('add').click(addElement);
 
 function addElement() {
   // add a new element
@@ -23,7 +23,9 @@ function addElement() {
 
 //  click the li element will change the changeStyle
 function changeStyle() {
+if($(this).hasClass('complete')){
 
+}
 }
 
 // delete by clicking the trash can
