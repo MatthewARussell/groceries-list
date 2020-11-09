@@ -17,7 +17,14 @@ import * as firebaseui from "firebaseui";
 
 // Add Firebase project configuration object here
 var firebaseConfig = {
-
+apiKey: "AIzaSyBPIrziljsPZrg40EUPY8y79BkiSJpFwM4",
+  authDomain: "server-1-0-0.firebaseapp.com",
+  databaseURL: "https://server-1-0-0.firebaseio.com",
+  projectId: "server-1-0-0",
+  storageBucket: "server-1-0-0.appspot.com",
+  messagingSenderId: "90869535296",
+  appId: "1:90869535296:web:23fab0861e50308d3205a5",
+  measurementId: "G-EGL6KNJN8S"
 };
 
 firebase.initializeApp(firebaseConfig);
