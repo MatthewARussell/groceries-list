@@ -28,13 +28,17 @@ apiKey: "AIzaSyBPIrziljsPZrg40EUPY8y79BkiSJpFwM4",
 };
 
 firebase.initializeApp(firebaseConfig);
-$("save").click(function(){
-  firebase.firestore().collection('mylist').add({
-    item:"try it"
-  }
-  )
+$("#save").click(function(){
+  $('li').each(function(){
+    var value =$(this).text();
+    console.log(value);
+     firebase.firestore().collection('mylist').add({
+    item: value
+  })
+  })
 });
 
 
-// Save the list to database
 
+
+// Save the list to database
